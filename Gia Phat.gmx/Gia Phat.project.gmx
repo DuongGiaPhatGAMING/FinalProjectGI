@@ -5,9 +5,38 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprites name="knight">
+      <sprite>sprites\knight_idle</sprite>
+      <sprite>sprites\knight_climb</sprite>
+      <sprite>sprites\knight_death</sprite>
+      <sprite>sprites\knight_attack</sprite>
+      <sprite>sprites\knight_run</sprite>
+      <sprite>sprites\knight_run_left</sprite>
+      <sprite>sprites\knight_hurt</sprite>
+      <sprite>sprites\knight_jump</sprite>
+    </sprites>
+    <sprites name="rogue">
+      <sprite>sprites\rogue_idle</sprite>
+      <sprite>sprites\rogue_attack</sprite>
+      <sprite>sprites\rogue_death</sprite>
+    </sprites>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\background0</background>
+    <background>background\background1</background>
+    <background>background\background2</background>
+    <background>background\background4</background>
+    <background>background\background5</background>
+    <background>background\background6</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\o_knight</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
