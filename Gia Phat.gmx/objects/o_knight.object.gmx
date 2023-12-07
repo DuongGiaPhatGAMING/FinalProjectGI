@@ -85,16 +85,16 @@ if (moveY &lt; 10) {
     moveY = min(moveY + grav, 9);
 }
 // COLLISION
-if (place_meeting(x, y + moveY, o_ground)) {
-    while (not place_meeting(x, y + sign(moveY), o_ground)) {
+if (place_meeting(x, y + moveY, o_block)) {
+    while (not place_meeting(x, y + sign(moveY), o_block)) {
     y += sign(moveY)
     }
     
     moveY = 0
 }
 
-if (place_meeting(x + moveX, y - 2, o_ground)) {
-    while (not place_meeting(x + sign(moveX), y -2, o_ground)) {
+if (place_meeting(x + moveX, y - 2, o_block)) {
+    while (not place_meeting(x + sign(moveX), y -2, o_block)) {
     x += sign(moveX)
     }
     
