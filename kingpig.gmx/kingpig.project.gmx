@@ -38,7 +38,6 @@
     </sprites>
     <sprites name="other">
       <sprite>sprites\s_ground</sprite>
-      <sprite>sprites\sprite23</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

@@ -56,6 +56,8 @@
     <object>objects\o_slope2</object>
     <object>objects\o_slope3</object>
     <object>objects\o_slope4</object>
+    <object>objects\o_rogue</object>
+    <object>objects\o_slope</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

@@ -1,12 +1,12 @@
 scr_input();
 
-sprite_index = s_idle;
+sprite_index = knight_idle;
 
 if (pressA or pressD) {
     state =kingStates.run
     } else if (pressW) {
     moveY = -10;
-    state = kingStates.jump;
+    state = knight_jump;
     } else if (pressSpace) {
-    state = kingStates.attack;
+    state = knight_attack;
     }

@@ -70,19 +70,24 @@ counterJump = 0;
 scr_input();
 // STATE
 switch (state) {
-     case (kingStates.idle):
+     case (knight_idle):
      scr_idle();
      break;
-     case (kingStates.run):
+     case (knight_run):
      scr_run();
      break;
-     case (kingStates.jump):
+     case (knight_jump):
      scr_jump();
      break;
 }
+var move = pressD - pressA // move will be -1, 0, or 1
+moveX = spd * move;
+
 // PHYSIC
-if (moveY &lt; 10) {
-    moveY = min(moveY + grav, 9);
+// Apply gravity if not on a slope or ground
+if (!place_meeting(x, y + 1, o_block) &amp;&amp; !place_meeting(x, y + 1, o_slope)) {
+    moveY += grav; // Apply gravity
+    if (moveY &gt; 9) moveY = 9; // Terminal velocity
 }
 // COLLISION
 if (place_meeting(x, y + moveY, o_block)) {
@@ -101,16 +106,31 @@ if (place_meeting(x + moveX, y - 2, o_block)) {
     moveX = 0
 }
 
-if (place_meeting(x +moveX, y -2, o_ground)) {
-    while (not place_meeting(x + sign(moveX), y - 2, o_ground)) {
-    x += sign(moveX)
-    }
-    
-    moveX = 0
+// Slope collision
+var on_slope = false;
+if (place_meeting(x + moveX, y, o_slope)) {
+    on_slope = true;
+    moveY = -moveX; // Move up the slope
 }
+
 //APPLY MOVEMENT
 x += moveX;
-y += moveY;
+
+// Apply vertical movement and correct for slope collision
+if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, o_slope))) {
+    y += moveY;
+} else if (on_slope) {
+    // Correct the vertical position if the player is embedded in the slope
+    while (place_meeting(x, y, o_slope)) {
+        y -= 1; // Move the player up until they are no longer colliding with the slope
+    }
+}
+
+// SPRITE CONTROLLER
+// Update sprite direction based on input
+if (move != 0) {
+    image_xscale = sign(move);
+}
 </string>
           </argument>
         </arguments>

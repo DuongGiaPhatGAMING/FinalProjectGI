@@ -1,21 +1,21 @@
 scr_input();
 
-sprite_index = s_run;
+sprite_index = knight_run;
 
 moveX = (pressD - pressA) * spd;
 
 if (pressD + pressA == 0) {
-state = kingStates.idle
+state = knight_idle
 }
 
 if (pressW) {
     if (couterJump < counterJumpMax) {
     moveY = -10;
     couterJump += 1;
-    state = kingStates.jump;
+    state = knight_jump;
     }
 }
 
 if (pressSpace) {
-    state =kingStates.attack;
+    state =knight_attack;
 }
