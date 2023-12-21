@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///INIT
-enum kingStates {
+enum knightStates {
 idle,
 attack,
 jump,
@@ -34,13 +34,13 @@ hit,
 run
 }
 
-state = kingStates.idle;
+state = knightStates.idle;
 
 spd = 3;
 grav = 1;
 moveX = 0;
 moveY = 0;
-coutermJumpMAX = 2;
+counterJumpMax = 2;
 counterJump = 0;
 
 </string>
@@ -70,13 +70,13 @@ counterJump = 0;
 scr_input();
 // STATE
 switch (state) {
-     case (knight_idle):
+     case (knightStates.idle):
      scr_idle();
      break;
-     case (knight_run):
+     case (knightStates.run):
      scr_run();
      break;
-     case (knight_jump):
+     case (knightStates.jump):
      scr_jump();
      break;
 }
@@ -105,6 +105,7 @@ if (place_meeting(x + moveX, y - 2, o_block)) {
     
     moveX = 0
 }
+
 
 // Slope collision
 var on_slope = false;
