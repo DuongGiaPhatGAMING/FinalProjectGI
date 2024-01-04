@@ -13,11 +13,17 @@ if (place_meeting(x, y + moveY, o_block)) {
         break;
     }
     state = knightStates.idle
-    counterJump = 0
 }
 
 if (pressSpace) {
     state = knightStates.attack;
+}
+
+if (pressW) {
+    if (counterJump < counterJumpMax) {
+        counterJump++;
+        moveY = -10;
+    }
 }
 
 if (pressD) {

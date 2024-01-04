@@ -10,9 +10,8 @@ if (pressD + pressA == 0) {
 
 if (pressW) {
     if (counterJump < counterJumpMax) {
+        counterJump++;
         moveY = -10;
-        counterJump += 1;
-        state = knightStates.jump;
     }
 }
 

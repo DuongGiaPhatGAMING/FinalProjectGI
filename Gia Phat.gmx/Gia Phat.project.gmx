@@ -6,6 +6,8 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\jump_sound</sound>
+    <sound>sound\Sou_Slash</sound>
+    <sound>sound\attack_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="knight">
@@ -29,6 +31,8 @@
     <sprite>sprites\s_slope2</sprite>
     <sprite>sprites\s_slope3</sprite>
     <sprite>sprites\s_slope4</sprite>
+    <sprite>sprites\s_deal_dmg</sprite>
+    <sprite>sprites\sprite18</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -51,6 +55,7 @@
     <script>scripts\scr_run.gml</script>
     <script>scripts\scr_jump.gml</script>
     <script>scripts\scr_idle.gml</script>
+    <script>scripts\scr_attack.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\o_knight</object>
@@ -63,6 +68,7 @@
     <objects name="rogue">
       <object>objects\o_rogue</object>
     </objects>
+    <object>objects\o_deal_dmg</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

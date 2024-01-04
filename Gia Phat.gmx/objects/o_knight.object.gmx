@@ -42,6 +42,7 @@ moveX = 0;
 moveY = 0;
 counterJumpMax = 2;
 counterJump = 0;
+attackCounter = 0
 
 </string>
           </argument>
@@ -79,6 +80,9 @@ switch (state) {
      case (knightStates.jump):
      scr_jump();
      break;
+     case (knightStates.attack):
+     scr_attack();
+     break;
 }
 var move = pressD - pressA // move will be -1, 0, or 1
 moveX = spd * move;
@@ -92,20 +96,19 @@ if (!place_meeting(x, y + 1, o_block) &amp;&amp; !place_meeting(x, y + 1, o_slop
 // COLLISION
 if (place_meeting(x, y + moveY, o_block)) {
     while (not place_meeting(x, y + sign(moveY), o_block)) {
-    y += sign(moveY)
+        y += sign(moveY)
     }
-    
+    counterJump = 0
     moveY = 0
 }
 
-if (place_meeting(x + moveX, y - 2, o_block)) {
-    while (not place_meeting(x + sign(moveX), y -2, o_block)) {
-    x += sign(moveX)
+if (place_meeting(x + moveX, y -2, o_block)) {
+    while (not place_meeting(x + sign(moveX), y -2, o_block)){
+        x += sign(moveX)
     }
     
     moveX = 0
 }
-
 
 // Slope collision
 var on_slope = false;
@@ -125,6 +128,8 @@ if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, o_slope))) {
     while (place_meeting(x, y, o_slope)) {
         y -= 1; // Move the player up until they are no longer colliding with the slope
     }
+    counterJump = 0
+    
 }
 
 // SPRITE CONTROLLER
