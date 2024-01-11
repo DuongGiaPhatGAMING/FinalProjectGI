@@ -32,7 +32,12 @@
     <sprite>sprites\s_slope3</sprite>
     <sprite>sprites\s_slope4</sprite>
     <sprite>sprites\s_deal_dmg</sprite>
-    <sprite>sprites\sprite18</sprite>
+    <sprite>sprites\s_enermy_deal_dmg</sprite>
+    <sprites name="magic">
+      <sprite>sprites\s_magic_idle</sprite>
+      <sprite>sprites\s_magic_attack</sprite>
+      <sprite>sprites\s_magic_laser</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -51,11 +56,18 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_input.gml</script>
-    <script>scripts\scr_run.gml</script>
-    <script>scripts\scr_jump.gml</script>
-    <script>scripts\scr_idle.gml</script>
-    <script>scripts\scr_attack.gml</script>
+    <scripts name="enermy">
+      <script>scripts\scr_enermy_idle.gml</script>
+      <script>scripts\scr_enermy_run.gml</script>
+      <script>scripts\scr_enermy_attack.gml</script>
+    </scripts>
+    <scripts name="knight">
+      <script>scripts\scr_input.gml</script>
+      <script>scripts\scr_jump.gml</script>
+      <script>scripts\scr_attack.gml</script>
+      <script>scripts\scr_run.gml</script>
+      <script>scripts\scr_idle.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\o_knight</object>
@@ -69,6 +81,9 @@
       <object>objects\o_rogue</object>
     </objects>
     <object>objects\o_deal_dmg</object>
+    <object>objects\o_enermy_deal_dmg</object>
+    <object>objects\o_magic</object>
+    <object>objects\o_magic_laser</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

@@ -10,6 +10,7 @@ if (pressD + pressA == 0) {
 
 if (pressW) {
     if (counterJump < counterJumpMax) {
+        audio_play_sound(jump_sound, 1, false);
         counterJump++;
         moveY = -10;
     }

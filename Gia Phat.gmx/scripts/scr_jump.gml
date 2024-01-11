@@ -1,9 +1,6 @@
 scr_input();
 sprite_index = knight_jump
 
-audio_play_sound(jump_sound, 1, false);
-
-
 //IDLE WHEN COLLSION WITH THE GROUND
 if (place_meeting(x, y + moveY, o_block)) {
     repeat (abs(moveY)) {
@@ -21,6 +18,7 @@ if (pressSpace) {
 
 if (pressW) {
     if (counterJump < counterJumpMax) {
+        audio_play_sound(jump_sound, 1, false);
         counterJump++;
         moveY = -10;
     }
