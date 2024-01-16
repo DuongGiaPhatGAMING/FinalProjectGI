@@ -45,6 +45,8 @@
       <sprite>sprites\iconx</sprite>
     </sprites>
     <sprite>sprites\playbt</sprite>
+    <sprite>sprites\teledoor_close</sprite>
+    <sprite>sprites\teledoor_open</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -80,8 +82,9 @@
   <objects name="objects">
     <object>objects\skill_x_icon</object>
     <object>objects\skill_z_icon</object>
-    <object>objects\o_knight</object>
+    <object>objects\skill_x</object>
     <object>objects\skill_z</object>
+    <object>objects\o_knight</object>
     <object>objects\o_block</object>
     <object>objects\o_slope1</object>
     <object>objects\o_slope2</object>
@@ -95,13 +98,14 @@
     <object>objects\o_enermy_deal_dmg</object>
     <object>objects\o_magic</object>
     <object>objects\o_magic_laser</object>
-    <object>objects\skill_x</object>
     <object>objects\playbut</object>
+    <object>objects\teleportdoor_1</object>
+    <object>objects\teleportdoor_2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mune</room>
-    <room>rooms\room1</room>
     <room>rooms\room2</room>
+    <room>rooms\room1</room>
     <room>rooms\room3</room>
     <room>rooms\roomlose</room>
     <room>rooms\room4</room>
