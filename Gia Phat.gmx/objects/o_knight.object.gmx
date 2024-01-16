@@ -46,6 +46,8 @@ attackCounter = 0
 hp = 100
 hp_max = 100
 
+instance_create(0, 0, skill_z_icon)
+instance_create(64, 0, skill_x_icon)
 </string>
           </argument>
         </arguments>
@@ -139,6 +141,54 @@ if (!on_slope || (on_slope &amp;&amp; !place_meeting(x, y + moveY, o_slope))) {
 if (move != 0) {
     image_xscale = sign(move);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// SKILL
+// skill z 
+if (instance_exists(skill_z_icon)) {
+    if (keyboard_check_pressed(ord("Z"))) {
+        skill_z_obj = instance_create(mouse_x, mouse_y, skill_z)
+        skill_z_obj.image_speed = 0.5
+        with (skill_z_icon) {
+            instance_destroy()
+        }
+        alarm[0] = 1800    
+    }
+}
+
+// skill x
+if (instance_exists(skill_x_icon)) {
+    if (keyboard_check_pressed(ord("X"))) {
+        skill_x_obj = instance_create(64, 0, skill_x)
+        skill_x_obj.direction = point_direction(0, 0, mouse_x, mouse_y)
+        skill_x_obj.speed = 10
+        skill_x_obj.image_speed = 0.5
+        skill_x_obj.image_angle = skill_x_obj.direction
+        with (skill_x_icon) {
+            instance_destroy()
+        }
+        alarm[1] = 1800    
+    }
+}
+
 </string>
           </argument>
         </arguments>
