@@ -8,6 +8,7 @@
     <sound>sound\jump_sound</sound>
     <sound>sound\Sou_Slash</sound>
     <sound>sound\attack_sound</sound>
+    <sound>sound\sound3</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="knight">
@@ -47,6 +48,7 @@
     <sprite>sprites\playbt</sprite>
     <sprite>sprites\teledoor_close</sprite>
     <sprite>sprites\teledoor_open</sprite>
+    <sprite>sprites\sand</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -63,6 +65,7 @@
     <background>background\background16</background>
     <background>background\background17</background>
     <background>background\background18</background>
+    <background>background\background19</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -101,6 +104,7 @@
     <object>objects\playbut</object>
     <object>objects\teleportdoor_1</object>
     <object>objects\teleportdoor_2</object>
+    <object>objects\sandd</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mune</room>
