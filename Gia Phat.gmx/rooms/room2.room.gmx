@@ -93,8 +93,8 @@
     <instance objName="o_block" x="640" y="416" name="inst_3ABFAD1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="672" y="416" name="inst_A760236B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="704" y="416" name="inst_3D9CB896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="704" y="448" name="inst_3E2D99D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="704" y="480" name="inst_4B4C9ACF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="672" y="448" name="inst_3E2D99D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="672" y="480" name="inst_4B4C9ACF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="672" y="512" name="inst_EEDC31BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="672" y="544" name="inst_54534ABE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="864" y="416" name="inst_B4B69807" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -126,13 +126,15 @@
     <instance objName="o_magic" x="32" y="448" name="inst_1D30A234" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_rogue" x="224" y="448" name="inst_044264F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="teleportdoor_2" x="0" y="192" name="inst_15429562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="sandd" x="832" y="640" name="inst_693491C7" locked="0" code="" scaleX="0.727272748947144" scaleY="0.703296720981598" colour="4294967295" rotation="0"/>
+    <instance objName="sandd" x="832" y="672" name="inst_693491C7" locked="0" code="" scaleX="0.727272748947144" scaleY="0.703296720981598" colour="4294967295" rotation="0"/>
     <instance objName="sandd" x="704" y="576" name="inst_5A62204C" locked="0" code="" scaleX="0.727272748947144" scaleY="0.351648360490799" colour="4294967295" rotation="0"/>
-    <instance objName="sandd" x="800" y="480" name="inst_9C776678" locked="0" code="" scaleX="0.727272748947144" scaleY="0.351648360490799" colour="4294967295" rotation="0"/>
+    <instance objName="sandd" x="832" y="480" name="inst_9C776678" locked="0" code="" scaleX="0.727272748947144" scaleY="0.351648360490799" colour="4294967295" rotation="0"/>
     <instance objName="sandd" x="512" y="448" name="inst_22392AFA" locked="0" code="" scaleX="0.969696998596191" scaleY="0.703296720981598" colour="4294967295" rotation="0"/>
     <instance objName="sandd" x="160" y="448" name="inst_5ADE1271" locked="0" code="" scaleX="1.21212124824524" scaleY="0.703296720981598" colour="4294967295" rotation="0"/>
     <instance objName="sandd" x="96" y="352" name="inst_B1EFD614" locked="0" code="" scaleX="0.969696998596191" scaleY="0.351648360490799" colour="4294967295" rotation="0"/>
     <instance objName="sandd" x="192" y="704" name="inst_BE2A044C" locked="0" code="" scaleX="1.21212124824524" scaleY="0.703296720981598" colour="4294967295" rotation="0"/>
+    <instance objName="o_rogue" x="96" y="256" name="inst_728B5BA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="sandd" x="672" y="416" name="inst_C91A8CD5" locked="0" code="" scaleX="0.727272748947144" scaleY="0.351648360490799" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
